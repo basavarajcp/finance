@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffdf00;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, button {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+}
+
+button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2575fc;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #6a11cb;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+button#save-to-excel {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffdf00;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button#save-to-excel:hover {
+    background-color: #ffbf00;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* Additional Dynamic Elements */
+header {
+    animation: header-animation 3s infinite alternate;
+}
+
+@keyframes header-animation {
+    0% { background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%); }
+    100% { background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%); }
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+input::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+footer p {
+    font-size: 0.9em;
+    animation: text-fade 5s infinite alternate;
+}
+
+@keyframes text-fade {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
