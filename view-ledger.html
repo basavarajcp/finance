@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Ledger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Finance Ledger System</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add-entry.html">Add Entry</a>
+            <a href="view-ledger.html">View Ledger</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Ledger Entries</h2>
+        <table id="ledger-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Loan Amount</th>
+                    <th>City</th>
+                    <th>Contact</th>
+                    <th>Interest</th>
+                    <th>Date Taken</th>
+                    <th>Current Interest to be Paid</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Entries will be dynamically added here -->
+            </tbody>
+        </table>
+        <button id="save-to-excel">Save to Excel</button>
+        <button id="save-to-pdf">Save to PDF</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Finance Ledger System</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
